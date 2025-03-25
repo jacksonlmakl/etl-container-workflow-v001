@@ -5,7 +5,7 @@ s3:
   - secret_key: ''
 steps:
   - name: Step 1
-    execute: step1
+    execute: step1.py
   - name: Step 2
     execute: step_2.sql
     database: test
