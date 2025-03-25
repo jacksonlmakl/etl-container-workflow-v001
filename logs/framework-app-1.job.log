@@ -1,0 +1,97 @@
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Hit:1 https://download.docker.com/linux/ubuntu jammy InRelease
+Hit:2 http://archive.ubuntu.com/ubuntu jammy InRelease
+Hit:3 http://archive.ubuntu.com/ubuntu jammy-updates InRelease
+Hit:4 http://archive.ubuntu.com/ubuntu jammy-backports InRelease
+Hit:5 https://deb.nodesource.com/node_18.x nodistro InRelease
+Hit:6 http://security.ubuntu.com/ubuntu jammy-security InRelease
+Reading package lists...
+Building dependency tree...
+Reading state information...
+13 packages can be upgraded. Run 'apt list --upgradable' to see them.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+python3 is already the newest version (3.10.6-1~22.04.1).
+python3-pip is already the newest version (22.0.2+dfsg-1ubuntu0.5).
+python3-venv is already the newest version (3.10.6-1~22.04.1).
+0 upgraded, 0 newly installed, 0 to remove and 13 not upgraded.
+Requirement already satisfied: duckdb>=0.8.1 in ./env/lib/python3.10/site-packages (from -r ./model/requirements.txt (line 1)) (1.2.1)
+Requirement already satisfied: pandas>=1.3.0 in ./env/lib/python3.10/site-packages (from -r ./model/requirements.txt (line 2)) (2.2.3)
+Requirement already satisfied: pyarrow>=7.0.0 in ./env/lib/python3.10/site-packages (from -r ./model/requirements.txt (line 3)) (19.0.1)
+Requirement already satisfied: numpy>=1.20.0 in ./env/lib/python3.10/site-packages (from -r ./model/requirements.txt (line 4)) (2.2.4)
+Requirement already satisfied: python-dotenv>=0.19.0 in ./env/lib/python3.10/site-packages (from -r ./model/requirements.txt (line 5)) (1.1.0)
+Requirement already satisfied: yq in ./env/lib/python3.10/site-packages (from -r ./model/requirements.txt (line 6)) (3.4.3)
+Requirement already satisfied: pyyaml in ./env/lib/python3.10/site-packages (from -r ./model/requirements.txt (line 7)) (6.0.2)
+Requirement already satisfied: pyiceberg in ./env/lib/python3.10/site-packages (from -r ./model/requirements.txt (line 8)) (0.9.0)
+Requirement already satisfied: boto3 in ./env/lib/python3.10/site-packages (from -r ./model/requirements.txt (line 9)) (1.37.19)
+Requirement already satisfied: google-cloud-storage in ./env/lib/python3.10/site-packages (from -r ./model/requirements.txt (line 10)) (3.1.0)
+Requirement already satisfied: azure-storage-blob in ./env/lib/python3.10/site-packages (from -r ./model/requirements.txt (line 11)) (12.25.0)
+Requirement already satisfied: tzdata>=2022.7 in ./env/lib/python3.10/site-packages (from pandas>=1.3.0->-r ./model/requirements.txt (line 2)) (2025.2)
+Requirement already satisfied: pytz>=2020.1 in ./env/lib/python3.10/site-packages (from pandas>=1.3.0->-r ./model/requirements.txt (line 2)) (2025.2)
+Requirement already satisfied: python-dateutil>=2.8.2 in ./env/lib/python3.10/site-packages (from pandas>=1.3.0->-r ./model/requirements.txt (line 2)) (2.9.0.post0)
+Requirement already satisfied: tomlkit>=0.11.6 in ./env/lib/python3.10/site-packages (from yq->-r ./model/requirements.txt (line 6)) (0.13.2)
+Requirement already satisfied: argcomplete>=1.8.1 in ./env/lib/python3.10/site-packages (from yq->-r ./model/requirements.txt (line 6)) (3.6.1)
+Requirement already satisfied: xmltodict>=0.11.0 in ./env/lib/python3.10/site-packages (from yq->-r ./model/requirements.txt (line 6)) (0.14.2)
+Requirement already satisfied: pyparsing<4.0.0,>=3.1.0 in ./env/lib/python3.10/site-packages (from pyiceberg->-r ./model/requirements.txt (line 8)) (3.2.3)
+Requirement already satisfied: cachetools<6.0.0,>=5.5.0 in ./env/lib/python3.10/site-packages (from pyiceberg->-r ./model/requirements.txt (line 8)) (5.5.2)
+Requirement already satisfied: fsspec>=2023.1.0 in ./env/lib/python3.10/site-packages (from pyiceberg->-r ./model/requirements.txt (line 8)) (2025.3.0)
+Requirement already satisfied: pydantic!=2.4.0,!=2.4.1,<3.0,>=2.0 in ./env/lib/python3.10/site-packages (from pyiceberg->-r ./model/requirements.txt (line 8)) (2.10.6)
+Requirement already satisfied: rich<14.0.0,>=10.11.0 in ./env/lib/python3.10/site-packages (from pyiceberg->-r ./model/requirements.txt (line 8)) (13.9.4)
+Requirement already satisfied: requests<3.0.0,>=2.20.0 in ./env/lib/python3.10/site-packages (from pyiceberg->-r ./model/requirements.txt (line 8)) (2.32.3)
+Requirement already satisfied: strictyaml<2.0.0,>=1.7.0 in ./env/lib/python3.10/site-packages (from pyiceberg->-r ./model/requirements.txt (line 8)) (1.7.3)
+Requirement already satisfied: sortedcontainers==2.4.0 in ./env/lib/python3.10/site-packages (from pyiceberg->-r ./model/requirements.txt (line 8)) (2.4.0)
+Requirement already satisfied: tenacity<10.0.0,>=8.2.3 in ./env/lib/python3.10/site-packages (from pyiceberg->-r ./model/requirements.txt (line 8)) (9.0.0)
+Requirement already satisfied: mmh3<6.0.0,>=4.0.0 in ./env/lib/python3.10/site-packages (from pyiceberg->-r ./model/requirements.txt (line 8)) (5.1.0)
+Requirement already satisfied: click<9.0.0,>=7.1.1 in ./env/lib/python3.10/site-packages (from pyiceberg->-r ./model/requirements.txt (line 8)) (8.1.8)
+Requirement already satisfied: jmespath<2.0.0,>=0.7.1 in ./env/lib/python3.10/site-packages (from boto3->-r ./model/requirements.txt (line 9)) (1.0.1)
+Requirement already satisfied: botocore<1.38.0,>=1.37.19 in ./env/lib/python3.10/site-packages (from boto3->-r ./model/requirements.txt (line 9)) (1.37.19)
+Requirement already satisfied: s3transfer<0.12.0,>=0.11.0 in ./env/lib/python3.10/site-packages (from boto3->-r ./model/requirements.txt (line 9)) (0.11.4)
+Requirement already satisfied: google-cloud-core<3.0dev,>=2.4.2 in ./env/lib/python3.10/site-packages (from google-cloud-storage->-r ./model/requirements.txt (line 10)) (2.4.3)
+Requirement already satisfied: google-auth<3.0dev,>=2.26.1 in ./env/lib/python3.10/site-packages (from google-cloud-storage->-r ./model/requirements.txt (line 10)) (2.38.0)
+Requirement already satisfied: google-crc32c<2.0dev,>=1.0 in ./env/lib/python3.10/site-packages (from google-cloud-storage->-r ./model/requirements.txt (line 10)) (1.7.0)
+Requirement already satisfied: google-api-core<3.0.0dev,>=2.15.0 in ./env/lib/python3.10/site-packages (from google-cloud-storage->-r ./model/requirements.txt (line 10)) (2.24.2)
+Requirement already satisfied: google-resumable-media>=2.7.2 in ./env/lib/python3.10/site-packages (from google-cloud-storage->-r ./model/requirements.txt (line 10)) (2.7.2)
+Requirement already satisfied: cryptography>=2.1.4 in ./env/lib/python3.10/site-packages (from azure-storage-blob->-r ./model/requirements.txt (line 11)) (44.0.2)
+Requirement already satisfied: isodate>=0.6.1 in ./env/lib/python3.10/site-packages (from azure-storage-blob->-r ./model/requirements.txt (line 11)) (0.7.2)
+Requirement already satisfied: azure-core>=1.30.0 in ./env/lib/python3.10/site-packages (from azure-storage-blob->-r ./model/requirements.txt (line 11)) (1.32.0)
+Requirement already satisfied: typing-extensions>=4.6.0 in ./env/lib/python3.10/site-packages (from azure-storage-blob->-r ./model/requirements.txt (line 11)) (4.12.2)
+Requirement already satisfied: six>=1.11.0 in ./env/lib/python3.10/site-packages (from azure-core>=1.30.0->azure-storage-blob->-r ./model/requirements.txt (line 11)) (1.17.0)
+Requirement already satisfied: urllib3!=2.2.0,<3,>=1.25.4 in ./env/lib/python3.10/site-packages (from botocore<1.38.0,>=1.37.19->boto3->-r ./model/requirements.txt (line 9)) (2.3.0)
+Requirement already satisfied: cffi>=1.12 in ./env/lib/python3.10/site-packages (from cryptography>=2.1.4->azure-storage-blob->-r ./model/requirements.txt (line 11)) (1.17.1)
+Requirement already satisfied: proto-plus<2.0.0,>=1.22.3 in ./env/lib/python3.10/site-packages (from google-api-core<3.0.0dev,>=2.15.0->google-cloud-storage->-r ./model/requirements.txt (line 10)) (1.26.1)
+Requirement already satisfied: googleapis-common-protos<2.0.0,>=1.56.2 in ./env/lib/python3.10/site-packages (from google-api-core<3.0.0dev,>=2.15.0->google-cloud-storage->-r ./model/requirements.txt (line 10)) (1.69.2)
+Requirement already satisfied: protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<7.0.0,>=3.19.5 in ./env/lib/python3.10/site-packages (from google-api-core<3.0.0dev,>=2.15.0->google-cloud-storage->-r ./model/requirements.txt (line 10)) (6.30.1)
+Requirement already satisfied: pyasn1-modules>=0.2.1 in ./env/lib/python3.10/site-packages (from google-auth<3.0dev,>=2.26.1->google-cloud-storage->-r ./model/requirements.txt (line 10)) (0.4.1)
+Requirement already satisfied: rsa<5,>=3.1.4 in ./env/lib/python3.10/site-packages (from google-auth<3.0dev,>=2.26.1->google-cloud-storage->-r ./model/requirements.txt (line 10)) (4.9)
+Requirement already satisfied: pydantic-core==2.27.2 in ./env/lib/python3.10/site-packages (from pydantic!=2.4.0,!=2.4.1,<3.0,>=2.0->pyiceberg->-r ./model/requirements.txt (line 8)) (2.27.2)
+Requirement already satisfied: annotated-types>=0.6.0 in ./env/lib/python3.10/site-packages (from pydantic!=2.4.0,!=2.4.1,<3.0,>=2.0->pyiceberg->-r ./model/requirements.txt (line 8)) (0.7.0)
+Requirement already satisfied: charset-normalizer<4,>=2 in ./env/lib/python3.10/site-packages (from requests<3.0.0,>=2.20.0->pyiceberg->-r ./model/requirements.txt (line 8)) (3.4.1)
+Requirement already satisfied: idna<4,>=2.5 in ./env/lib/python3.10/site-packages (from requests<3.0.0,>=2.20.0->pyiceberg->-r ./model/requirements.txt (line 8)) (3.10)
+Requirement already satisfied: certifi>=2017.4.17 in ./env/lib/python3.10/site-packages (from requests<3.0.0,>=2.20.0->pyiceberg->-r ./model/requirements.txt (line 8)) (2025.1.31)
+Requirement already satisfied: markdown-it-py>=2.2.0 in ./env/lib/python3.10/site-packages (from rich<14.0.0,>=10.11.0->pyiceberg->-r ./model/requirements.txt (line 8)) (3.0.0)
+Requirement already satisfied: pygments<3.0.0,>=2.13.0 in ./env/lib/python3.10/site-packages (from rich<14.0.0,>=10.11.0->pyiceberg->-r ./model/requirements.txt (line 8)) (2.19.1)
+Requirement already satisfied: pycparser in ./env/lib/python3.10/site-packages (from cffi>=1.12->cryptography>=2.1.4->azure-storage-blob->-r ./model/requirements.txt (line 11)) (2.22)
+Requirement already satisfied: mdurl~=0.1 in ./env/lib/python3.10/site-packages (from markdown-it-py>=2.2.0->rich<14.0.0,>=10.11.0->pyiceberg->-r ./model/requirements.txt (line 8)) (0.1.2)
+Requirement already satisfied: pyasn1<0.7.0,>=0.4.6 in ./env/lib/python3.10/site-packages (from pyasn1-modules>=0.2.1->google-auth<3.0dev,>=2.26.1->google-cloud-storage->-r ./model/requirements.txt (line 10)) (0.6.1)
+-------------------------------------
+Executing step: Step 1
+EXECUTE=model/step1
+-------------------------------------
+✅ Step completed successfully
+
+-------------------------------------
+Executing step: Step 2
+EXECUTE=model/step_2.sql
+DATABASE=test
+-------------------------------------
+Connected to existing database: duckdb/test.duckdb
+Result:  [(1,)]
+✅ Step completed successfully
+
+All steps completed!
